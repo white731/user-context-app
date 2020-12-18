@@ -7,11 +7,11 @@ import User from './components/User';
 function App() {
   return (
   <>
-  <Navbar/>
-  <Container>
-    <Route exact path="/" render={ () => <div>Home</div> }/>
-    <Route exact path="/user/profile" component={User}/>
-  </Container>
+    <Navbar/>
+      <Container>
+        <Route exact path="/" render={ () => <div>Home</div> }/>
+        <Route exact path="/user/profile" component={User}/>
+      </Container>
   </>
   );
 }

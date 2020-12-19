@@ -8,7 +8,7 @@ const UserProfile = () => {
 
   return(
    <Card>
-     <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
+     <Image src={value.userData.avatar} wrapped ui={false} />
     <Card.Content>
       <Card.Header>
         {value.userData.firstName} {value.userData.lastName}

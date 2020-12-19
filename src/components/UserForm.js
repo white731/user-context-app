@@ -9,12 +9,14 @@ const UserForm = () => {
   const [fName, setFName] = useState("")
   const [lName, setLName] = useState("")
   const [emailYo, setEmailYo] = useState("")
+  const [avatarYo, setAvatarYo] = useState("")
   
   const handleSubmit = (e) => {
     value.setUserData({
       firstName:fName,
       lastName:lName,
-      email:emailYo
+      email:emailYo,
+      avatar:avatarYo
     })
   }
 
@@ -40,6 +42,13 @@ const UserForm = () => {
         placeholder = "Last Name" 
         value={lName} 
         onChange = {(e)=>(setLName(e.target.value))}/>
+      </Form.Field>
+      <Form.Field >
+      <label>Avatar Link</label> 
+      <input 
+        placeholder = "Avatar" 
+        value={avatarYo} 
+        onChange = {(e)=>(setAvatarYo(e.target.value))}/>
       </Form.Field>
       <Form.Button>Sign Up</Form.Button>
     </Form>
